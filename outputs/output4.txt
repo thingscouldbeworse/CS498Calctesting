@@ -1,0 +1,2 @@
+error: stack empty
+	12.000000
