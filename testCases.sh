@@ -4,7 +4,9 @@
 # FUNCTIONAL SPECIFICATION 1
 	# Test 1: Call executable by name
 	echo "Executing Test 1"
-	#./Calculator.exe
+	printf "q\n" > ./inputs/input1.txt
+	./Calculator.exe < ./inputs/input1.txt > outputs/output1.txt
+	diff -q outputs/output1.txt expOuts/expOut1.txt
 
 # FUNCTIONAL SPECIFICATION 2
 	# Test 2: Run executable, check for message
